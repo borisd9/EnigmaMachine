@@ -7,7 +7,7 @@ public class Substitutor {
 		
 		//convert letter to index 
         public static int letter2index(char c) {     	
-        	return (c - 'A')%26 ;
+        	return (int)(c - 'A')%26 ;
         }
         
         

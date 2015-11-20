@@ -7,8 +7,8 @@ public class Reflector extends Translator {
 	
 	
 	//reflect number
-	public char translate(int n){
-		return index2letter(translate(n-'A', 1));
+	public char encode(char n){
+		return index2letter(permutate(n -'A', 1));
 	}
 	
 	

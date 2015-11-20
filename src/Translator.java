@@ -6,7 +6,7 @@ public class Translator extends Substitutor {
 	
 	//encode number 
 	//pass = 1 (L->R) , pass = 2 (R->L)
-	protected int translate(int n, int pass){
+	protected int permutate(int n, int pass){
 		
 		//String per = this.permutation;
 		

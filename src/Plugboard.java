@@ -7,7 +7,7 @@ public class Plugboard extends Translator {
 	
 	
 	//constructor with pairs
-	public Plugboard (String pairs){	
+	public void updatePairs(String pairs){	
 		
 		//use StringBuilder to modify the string
 		StringBuilder str = new StringBuilder("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
@@ -27,8 +27,8 @@ public class Plugboard extends Translator {
 	
 	
 	//translate number according to plugboard permutation
-	public char translate(int n){
-		return index2letter(translate(n-'A', 1));
+	public char encode(char n){
+		return index2letter(permutate(n -'A', 1));
 	}
 	
 	
