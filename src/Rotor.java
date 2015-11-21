@@ -3,7 +3,7 @@ public class Rotor extends Translator {
 	public int ringSetting, ringOffset, ringNotch;
 	
 	public Rotor (String permutation, char setting, char offset, char notch){
-		this.permutation = permutation;
+		super(permutation);
 		ringSetting = letter2index(setting);
 		ringOffset = letter2index(offset);		
 		ringNotch = letter2index(notch);

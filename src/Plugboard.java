@@ -2,7 +2,7 @@ public class Plugboard extends Translator {
 	
 	//default constructor
 	public Plugboard (){
-		this.permutation = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		super("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	}
 	
 	

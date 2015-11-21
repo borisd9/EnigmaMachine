@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Enigma extends Substitutor {
+public class Enigma extends Helper {
 	
 			//init reflactor B
 			Reflector ref = new Reflector("YRUHQSLDPXNGOKMIEBFZCWVJAT");
@@ -21,7 +21,7 @@ public class Enigma extends Substitutor {
 			
 		
 		//constructor
-		public Enigma(int[] index, char[] setting, char[] offset, String p){
+		public void configure(int[] index, char[] setting, char[] offset, String p){
 			
 			for(int i=0;i<3;i++){
 				//update rotor settings
@@ -36,7 +36,7 @@ public class Enigma extends Substitutor {
 		
 		
 		//main cipher function
-		public String cipher (String plaintext){
+		public String cipher(String plaintext){
 			
 			char cipher;
 			String ciphertext = "";
@@ -46,7 +46,7 @@ public class Enigma extends Substitutor {
 				
 				//handle spaces
 				if(plaintext.charAt(i) == ' '){
-					System.out.print(" ");
+					ciphertext+= " ";
 					continue;
 				}
 				

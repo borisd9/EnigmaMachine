@@ -1,15 +1,17 @@
-public class Translator extends Substitutor {
+public class Translator extends Helper {
 	
 	//internal permutation value
 	protected String permutation;
 	
-	
+	//constructor
+	public Translator(String perm){
+		permutation = perm;
+	}
+		
 	//encode number 
 	//pass = 1 (L->R) , pass = 2 (R->L)
 	protected int permutate(int n, int pass){
-		
-		//String per = this.permutation;
-		
+				
 		//L->R
 		if(pass == 1)
 			return letter2index(permutation.charAt(n));

@@ -2,7 +2,7 @@ public class Reflector extends Translator {
 	
 	//init reflector permutation
 	public Reflector (String permutation){
-		this.permutation = permutation;
+		super(permutation);
 	}
 	
 	
