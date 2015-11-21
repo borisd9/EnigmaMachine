@@ -1,3 +1,4 @@
+package Cyber1;
 public class Reflector extends Translator {
 	
 	//init reflector permutation

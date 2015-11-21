@@ -1,3 +1,4 @@
+package Cyber1;
 public class Rotor extends Translator {
 	
 	public int ringSetting, ringOffset, ringNotch;

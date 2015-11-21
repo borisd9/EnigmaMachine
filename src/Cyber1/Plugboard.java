@@ -1,3 +1,4 @@
+package Cyber1;
 public class Plugboard extends Translator {
 	
 	//default constructor
@@ -28,7 +29,7 @@ public class Plugboard extends Translator {
 	
 	//translate number according to plugboard permutation
 	public char encode(char n){
-		return index2letter(permutate(n -'A', 1));
+		return index2letter(permutate(n - 'A', 1));
 	}
 	
 	

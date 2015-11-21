@@ -1,7 +1,14 @@
+package Cyber1;
+
+import java.util.HashMap;
+
 public class Translator extends Helper {
 	
 	//internal permutation value
 	protected String permutation;
+	
+	//TODO
+	protected HashMap map;
 	
 	//constructor
 	public Translator(String perm){
@@ -20,5 +27,4 @@ public class Translator extends Helper {
 			return permutation.indexOf(index2letter(n));
 	}
 
-	
 }

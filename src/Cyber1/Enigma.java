@@ -1,3 +1,4 @@
+package Cyber1;
 import java.util.Scanner;
 
 public class Enigma extends Helper {
